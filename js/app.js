@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', function () {
         limpiarAlerta(e.target.parentElement);
 
 
-        //asignando los valores 
+        //ASIGNANDO LOS VALORES
         email[e.target.name] = e.target.value.trim().toLowerCase();
 
 
-        //comprobando objecto de email 
+        //COMPROBANDO OBJETO DE EMAIL
         comprobarEmail()
     }
 
@@ -88,13 +88,13 @@ document.addEventListener('DOMContentLoaded', function () {
         //ESTO COMPRUEBA SI YA EXISTE UNA ALERTA 
         limpiarAlerta(referencia)
 
-        //Generando alerta en HTML 
+        //GENERANDO ALERTA EN HTML
         const error = document.createElement('P');
         error.textContent = mensaje
         error.classList.add('bg-red-600', 'text-white', 'p-2', 'text-center');
         error.textContent = mensaje
 
-        //Aplicando el error en el formulario
+        //APLICANDO ERROR EN EL FORMULARIO
         referencia.appendChild(error)
 
     }
